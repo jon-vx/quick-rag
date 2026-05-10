@@ -1,13 +1,15 @@
 [project]
 name = "quick-rag"
 version = "0.1.0"
-description = "Lightweight RAG over a PDF corpus."
+description = "Point this at your documents. Ask questions. Get grounded answers."
 requires-python = ">=3.11"
 dependencies = [
     "docling>=2.0",
     "lancedb>=0.13",
     "sentence-transformers>=3.0",
-    "anthropic>=0.40",
     "httpx>=0.27",
     "python-dotenv>=1.0",
 ]
+
+[project.scripts]
+quick-rag = "quick_rag.rag:main"

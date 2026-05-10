@@ -4,8 +4,12 @@ __pycache__/
 *.pyc
 *.egg-info/
 .DS_Store
-
-# user data + index
+ 
+# Index data (created at runtime inside doc folders)
+.quick_rag/
+ 
+# Legacy data folder
 data/pdfs/*
 data/lancedb/
 !data/pdfs/.gitkeep
+ 
